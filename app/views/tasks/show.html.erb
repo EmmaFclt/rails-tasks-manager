@@ -6,5 +6,6 @@
         This task is not completed yet
       <% end %>
 </p>
-
+<p><%= link_to "Edit the task", edit_task_path(@task) %></p>
 <p><%= link_to "Back to list", tasks_path %></p>
+<p><%= link_to "Delete from the list", delete_task_path(@task), :method => :delete %></p>
